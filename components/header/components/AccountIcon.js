@@ -5,9 +5,9 @@ import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 import Badge from "@mui/material/Badge";
 import {styled} from "@mui/material/styles";
-import Cart from '../../../section/home/Cart/Cart'
 import {useState} from "react";
 import {useSelector} from "react-redux";
+import Cart from "@/section/home/cart/Cart";
 
 const StyledBadge = styled(Badge)(({theme}) => ({
     "& .MuiBadge-badge": {

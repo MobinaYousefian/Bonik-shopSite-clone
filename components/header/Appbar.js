@@ -4,10 +4,10 @@ import {AppBar, Toolbar, Box, Stack} from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Link from 'next/link'
 
-import AccountIcon from "./components/AccountIcon";
-import SearchBar from "./components/SearchBar";
-import SimpleSearchBar from "./components/SimpleSearchBar";
-import MegaMenuButton from "./components/MegaMenuButton";
+import SearchBar from "@/components/header/components/SearchBar";
+import MegaMenuButton from "@/components/header/components/MegaMenuButton";
+import AccountIcon from "@/components/header/components/AccountIcon";
+import SimpleSearchBar from "@/components/header/components/SimpleSearchBar";
 
 export default function Appbar() {
     const matches = useMediaQuery("(min-width:901px)");

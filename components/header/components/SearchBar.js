@@ -3,8 +3,8 @@ import InputBase from "@mui/material/InputBase";
 import Divider from "@mui/material/Divider";
 import Box from "@mui/material/Box";
 import SearchIcon from "@mui/icons-material/Search";
+import SearchResult from "@/components/header/components/SearchResult";
 import Select from "./custom-select";
-import SearchResult from "./searchResult";
 
 const lan = [
     {id:1,title: "All Categories", img: ""},
