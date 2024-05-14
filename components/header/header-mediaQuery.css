@@ -1,0 +1,11 @@
+@media (min-width: 901px) {
+    .mobileBreakPoint {
+        display: none;
+    }
+}
+
+@media (max-width: 901px) {
+    .tabletBreakPoint {
+        display: none;
+    }
+}
