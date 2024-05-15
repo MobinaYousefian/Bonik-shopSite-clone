@@ -5,6 +5,7 @@ import {ThemeProvider} from "@mui/material";
 import Theme from "../theme/theme";
 import {Head} from "@/components/header/Head";
 import ReduxProvider from "@/redux/ReduxProvider";
+import Footer from "@/components/footer/Footer";
 
 export const metadata = {
   title: "Bonik (clone) - The Best React eCommerce Template",
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
             <body>
             <Head/>
             {children}
+            <Footer/>
             </body>
             </html>
         </ReduxProvider>
