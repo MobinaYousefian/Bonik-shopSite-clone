@@ -1,6 +1,6 @@
 import {AppBar, Toolbar, Box} from "@mui/material";
-import MainMenu from "./components/MainMenu";
 import MegaMenuButton from "@/components/header/components/MegaMenuButton";
+import MainMenu from "@/components/header/components/MainMenu";
 
 export default function MenuBar() {
     return (

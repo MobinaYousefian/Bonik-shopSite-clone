@@ -4,7 +4,7 @@ import Divider from "@mui/material/Divider";
 import Box from "@mui/material/Box";
 import SearchIcon from "@mui/icons-material/Search";
 import SearchResult from "@/components/header/components/SearchResult";
-import Select from "./custom-select";
+import NativeSelectDemo from "@/components/header/components/NativeSelectDemo";
 
 const lan = [
     {id:1,title: "All Categories", img: ""},
@@ -48,7 +48,7 @@ export default function SearchBar({search ,setSearch}) {
             />
             <Divider sx={{height: "40px"}} orientation="vertical"/>
             <Box minWidth={'140px'}>
-                <Select list={lan} index={6} color="gray" top={1}/>
+                <NativeSelectDemo list={lan} index={6} color="gray" top={1}/>
             </Box>
             <SearchResult search={search} setSearch={setSearch}/>
         </Paper>

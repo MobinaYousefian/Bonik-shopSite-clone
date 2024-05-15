@@ -2,8 +2,7 @@ import { AppBar, Toolbar, Typography, Box, Stack } from "@mui/material";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import Link from 'next/link'
-
-import Select from "./components/custom-select";
+import NativeSelectDemo from "@/components/header/components/NativeSelectDemo";
 
 const lan = [
     {
@@ -124,10 +123,10 @@ export const Header = () => {
                             Need Help?
                         </Typography>
                         <Box>
-                            <Select list={lan} index={2} color="white" right={'70px'}/>
+                            <NativeSelectDemo list={lan} index={2} color="white" right={'70px'}/>
                         </Box>
                         <Box>
-                            <Select list={usd} index={0} color="white" right={'10px'} />
+                            <NativeSelectDemo list={usd} index={0} color="white" right={'10px'} />
                         </Box>
                     </Stack>
                 </Toolbar>

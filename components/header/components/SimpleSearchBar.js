@@ -1,7 +1,7 @@
 import Paper from "@mui/material/Paper";
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
-import SearchResult from "./searchResult";
+import SearchResult from "@/components/header/components/SearchResult";
 
 export default function SimpleSearchBar({search,setSearch}) {
     const handleChange = (e) => {

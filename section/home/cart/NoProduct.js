@@ -20,7 +20,7 @@ const NoProduct = ({items}) => {
 
     return (
         <CustomGrid display={items.length === 0 ? "flex" : "none"}>
-            <Image src={shoppingBag} />
+            <Image src={shoppingBag} alt={"shoppingBag"}/>
             <TypographyGray>
                 Your shopping bag is empty. Start shopping
             </TypographyGray>

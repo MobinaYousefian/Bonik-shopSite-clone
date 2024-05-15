@@ -1,5 +1,5 @@
 import {Stack} from "@mui/material";
-import CartSelectedProductCard from "./CartSelectedProductCard";
+import CartSelectedProductCard from "@/section/home/cart/CartSelectedProductCard";
 
 const CartSelectedProductsList = ({items}) => {
     return (

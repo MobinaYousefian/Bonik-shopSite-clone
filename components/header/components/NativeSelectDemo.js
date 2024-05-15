@@ -3,7 +3,7 @@ import {useState} from "react";
 import {Box, Button, Paper, Stack, Typography} from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
-export default function NativeSelectDemo ({list,color, right}) {
+export default function NativeSelectDemo ({list, color, right}) {
     const [open, setOpen] = useState(false);
     const [value, setValue] = useState(list[0].title);
     const [img, setImg] = useState(list[0].img);

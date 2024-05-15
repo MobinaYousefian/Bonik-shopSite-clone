@@ -1,6 +1,5 @@
 import {Typography, Stack, Paper} from "@mui/material";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
-import Theme from "../../../theme/theme";
 
 export default function CustomDrop({title, arr}) {
     return (

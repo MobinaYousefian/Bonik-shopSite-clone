@@ -3,9 +3,9 @@ import { Typography, Divider, Drawer, Grid } from "@mui/material";
 import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
 import Theme from "../../../theme/theme";
 
-import CartButtonBox from "./CartButtonBox";
-import NoProduct from "./NoProduct";
-import CartSelectedProductsList from "./CartSelectedProductsList";
+import CartButtonBox from "@/section/home/cart/CartButtonBox";
+import NoProduct from "@/section/home/cart/NoProduct";
+import CartSelectedProductsList from "@/section/home/cart/CartSelectedProductsList";
 
 const Cart = ({ state, setState, items }) => {
 
