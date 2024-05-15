@@ -1,6 +1,6 @@
 import "./globals.css";
 // import '../section/home/flashDeal/FlashDeal.style.css'
-// import '../section/home/slideShow/SlideShow.css'
+// import '../section/home/slideShow/slideShow.css'
 import {ThemeProvider} from "@mui/material";
 import Theme from "../theme/theme";
 import {Head} from "@/components/header/Head";
