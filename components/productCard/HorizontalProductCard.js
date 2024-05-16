@@ -2,7 +2,6 @@
 import {useDispatch, useSelector} from "react-redux";
 import {useState} from "react";
 import {Dialog, Grid, Typography} from "@mui/material";
-import ProductCardChip from "./productCardChip";
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 import Theme from "../../theme/theme";
@@ -19,6 +18,7 @@ import ProductCartAdd from "@/components/productCard/ProductCartAdd";
 import {addToCart, decreaseItem} from "@/redux/features/cartSlice";
 import Link from "next/link";
 import {useRouter} from "next/navigation";
+import ProductCardChip from "@/components/productCard/ProductCardChip";
 
 const HorizontalProductCard = ({product}) => {
     const dispatch = useDispatch();
