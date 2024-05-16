@@ -19,8 +19,8 @@ const MainHome = () => {
             <BigDiscount/>
             <Brands title={'Car'} category={'car'} display={'none'}/>
             <Ads/>
-            {/*<Brands title={'Motor'} category={'motor'} display={'flex'}/>*/}
-            {/*<Brands title={'Gadget'} category={'gadget'} display={'flex'}/>*/}
+            <Brands title={'Motor'} category={'motor'} display={'flex'}/>
+            <Brands title={'Gadget'} category={'gadget'} display={'flex'}/>
             {/*<CategoryList/>*/}
             {/*<MadeForYou/>*/}
             {/*<AboutUs/>*/}
