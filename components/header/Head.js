@@ -1,4 +1,4 @@
-import "../mediaQuery.css"
+import "../../app/mediaQuery.css"
 import {Header} from "@/components/header/Header";
 import Appbar from "@/components/header/Appbar";
 import MenuBar from "@/components/header/MenuBar";

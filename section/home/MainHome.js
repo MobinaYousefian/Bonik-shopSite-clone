@@ -6,6 +6,7 @@ import RatingAndFeature from "@/section/home/ratingAndFeature/RatingAndFeature";
 import NewArrival from "@/section/home/newArrival/NewArrival";
 import BigDiscount from "@/section/home/bigDiscount/BigDiscount";
 import Brands from "@/section/home/brands/Brands";
+import Ads from "@/section/home/ads/Ads";
 
 const MainHome = () => {
 
@@ -17,7 +18,7 @@ const MainHome = () => {
             <NewArrival/>
             <BigDiscount/>
             <Brands title={'Car'} category={'car'} display={'none'}/>
-            {/*<Ads/>*/}
+            <Ads/>
             {/*<Brands title={'Motor'} category={'motor'} display={'flex'}/>*/}
             {/*<Brands title={'Gadget'} category={'gadget'} display={'flex'}/>*/}
             {/*<CategoryList/>*/}
