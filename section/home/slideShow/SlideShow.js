@@ -32,26 +32,28 @@ function SampleNextArrow(props) {
     );
 }
 
+const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 400,
+    autoplaySpeed: 2500,
+    nextArrow: <SampleNextArrow/>,
+    prevArrow: <SampleNextArrow/>
+}
+const InfoBox = styled(Box)({
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'flex-start',
+})
+
 export default function SlideShow() {
     const Query = useMediaQuery("(min-width:321px)");
     const Query1 = useMediaQuery("(min-width:800px)");
-    const settings = {
-        dots: true,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        speed: 400,
-        autoplaySpeed: 2500,
-        nextArrow: <SampleNextArrow/>,
-        prevArrow: <SampleNextArrow/>
-    }
-    const InfoBox = styled(Box)({
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'flex-start',
-    })
+
     const InfoHeader = styled(Typography)({
         fontSize: Query === true ? '4rem' : "1.5rem",
         marginTop: 0,
@@ -59,7 +61,8 @@ export default function SlideShow() {
         lineHeight: '1.2',
         color: "rgb(43, 52, 69)",
         fontWeight: "bold"
-    })
+    });
+
     return (
         <Grid container mb={3} bgcolor={Theme.palette.primary.light} pb={8} pr={Query1 === true ? 0 : 4} zIndex={-1}>
             <Grid container spacing={3} maxWidth={'1200px'} margin={"auto"}>

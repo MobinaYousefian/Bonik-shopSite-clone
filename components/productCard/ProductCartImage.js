@@ -7,7 +7,7 @@ const ProductCartImage = ({product}) => {
         <Grid display={'flex'} alignItems={'center'} justifyContent={'space-between'}>
             <Link href={`/product/${encodeURIComponent(product.id)}`}>
                 <Grid>
-                    <Image alt={product.title} src={product.images[0].image} className={"imageW-H"}/>
+                    <Image alt={product.title} src={product.images[0].image} className={"img-w-h-100"}/>
                 </Grid>
             </Link>
         </Grid>
