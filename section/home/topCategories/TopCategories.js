@@ -10,43 +10,56 @@ import DashboardIcon from '@mui/icons-material/Dashboard';
 import Title from "@/section/home/title/Title";
 import {topCategory} from "@/library/topCategory";
 
+const settings = {
+    infinite: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    swipeToSlide: true,
+    responsive: [
+        {
+            breakpoint: 1100,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 730,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
+}
+const CartBox = styled(Box)(
+    {
+        padding: "15px",
+        borderRadius: "8px",
+        backgroundColor: 'rgb(255, 255, 255)',
+        boxShadow: 'rgb(3 0 71 / 9%) 0px 1px 3px',
+        cursor: "pointer",
+        margin: "10px",
+        display: "flex!important",
+        width: "auto!important",
+        justifyContent: 'center',
+        position: "relative"
+    }
+)
+const HoverBox = styled(Box)({
+    position: "absolute",
+    backgroundColor: "black",
+    borderRadius: '10px',
+    zIndex: "1",
+    top: "0",
+    right: "0",
+    bottom: "0",
+    left: "0",
+    opacity: "0",
+    "&:hover": {opacity: ".3", transition: 'all 250ms ease-in-out 0s'}
+})
+
 export default function Category() {
     const Query = useMediaQuery('(min-width:321px)')
-    const settings = {
-        infinite: false,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        swipeToSlide: true,
-        responsive: [
-            {
-                breakpoint: 1100,
-                settings: {
-                    slidesToShow: 2,
-                }
-            },
-            {
-                breakpoint: 730,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    }
-    const CartBox = styled(Box)(
-        {
-            padding: "15px",
-            borderRadius: "8px",
-            backgroundColor: 'rgb(255, 255, 255)',
-            boxShadow: 'rgb(3 0 71 / 9%) 0px 1px 3px',
-            cursor: "pointer",
-            margin: "10px",
-            display: "flex!important",
-            width: "auto!important",
-            justifyContent: 'center',
-            position: "relative"
-        }
-    )
     const TitlesBox = styled(Box)(
         {
             display: 'flex',
@@ -58,18 +71,7 @@ export default function Category() {
             top: '15%',
         }
     )
-    const HoverBox = styled(Box)({
-        position: "absolute",
-        backgroundColor: "black",
-        borderRadius: '10px',
-        zIndex: "1",
-        top: "0",
-        right: "0",
-        bottom: "0",
-        left: "0",
-        opacity: "0",
-        "&:hover": {opacity: ".3", transition: 'all 250ms ease-in-out 0s'}
-    })
+
     return (
         <Box
             my={2}
@@ -95,9 +97,11 @@ export default function Category() {
                             display: "flex",
                             alignItems: "center",
                             position: "relative",
-                            borderRadius:'10px'
+                            borderRadius:'10px',
+                            width: "100%",
+                            height: "100%"
                         }}>
-                            <Image src={item.image} alt={item.image}/>
+                            <Image src={item.image} alt={item.image} className={"img-w-h-100"}/>
                             <HoverBox>{}</HoverBox>
                         </Box>
                     </CartBox>
