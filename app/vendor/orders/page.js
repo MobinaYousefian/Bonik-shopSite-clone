@@ -1,4 +1,4 @@
-import OrdersPage from "@/section/vendor/OrdersPage";
+import OrdersPage from "@/components/OrdersPage";
 
 export default function Orders() {
     return (

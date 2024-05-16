@@ -18,7 +18,7 @@ export default function SearchCategoryPage({categoryData}) {
             max:99999,
         }
     );
-    const matches = useMediaQuery('(min-width:1027px)');
+    const matches = useMediaQuery('(min-width:900px)');
     const matchesHead = useMediaQuery('(min-width:750px)');
 
     return (
@@ -46,7 +46,11 @@ export default function SearchCategoryPage({categoryData}) {
                     matches={matches}
                     matchesHead={matchesHead}
                 />
-                <Grid item lg={3} display={matches === true ? 'block' : 'none'}>
+                <Grid item md={3.25} lg={3} display={'none'} sx={{
+                    '@media (min-width: 900px)': {
+                        display: "block"
+                    },
+                }}>
                     <SearchFilter
                         filter={filter}
                         setFilter={setFilter}

@@ -4,7 +4,7 @@ import HorizontalProductCard from "@/components/productCard/HorizontalProductCar
 
 const SearchCards = ({categoryData, filter, card}) => {
     return (
-        <Grid item xs={12} lg={9}>
+        <Grid item xs={12} md={8.5} lg={9}>
             <Grid container spacing={3}>
                 {filter.price === 'Relevance' || filter.price === 'Date' ?
                     categoryData.sort((firstItem, secondItem) => firstItem.id - secondItem.id).filter(p => (p.sale === true ? (p.price * (100 - p.MSale)) / 100 : p.price) > filter.min && p.price < filter.max).map(p => (
