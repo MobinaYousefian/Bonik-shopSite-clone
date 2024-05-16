@@ -8,6 +8,8 @@ import BigDiscount from "@/section/home/bigDiscount/BigDiscount";
 import Brands from "@/section/home/brands/Brands";
 import Ads from "@/section/home/ads/Ads";
 import CategoryList from "@/section/home/categoryList/CategoryList";
+import MadeForYou from "@/section/home/madeForYou/MadeForYou";
+import AboutUs from "@/section/home/aboutUs/AboutUs";
 
 const MainHome = () => {
 
@@ -23,8 +25,8 @@ const MainHome = () => {
             <Brands title={'Motor'} category={'motor'} display={'flex'}/>
             <Brands title={'Gadget'} category={'gadget'} display={'flex'}/>
             <CategoryList/>
-            {/*<MadeForYou/>*/}
-            {/*<AboutUs/>*/}
+            <MadeForYou/>
+            <AboutUs/>
         </BoxCustom>
     )
 }
