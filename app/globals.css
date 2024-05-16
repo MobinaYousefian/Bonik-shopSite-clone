@@ -99,3 +99,8 @@ a {
     border: 1px solid #E94560;
     background-color: transparent;
 }
+
+.imageW-H {
+    width: 100%;
+    height: 100%;
+}

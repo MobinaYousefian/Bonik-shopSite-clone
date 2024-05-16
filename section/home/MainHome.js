@@ -1,11 +1,12 @@
 'use client'
 import {BoxCustom} from "@/style/style";
+import {FlashDeal} from "@/section/home/flashDeal/FlashDeal";
 
 const MainHome = () => {
 
     return (
         <BoxCustom>
-            {/*<FlashDeal/>*/}
+            <FlashDeal/>
             {/*<Category/>*/}
             {/*<RatingAndFeature/>*/}
             {/*<NewArrival/>*/}
