@@ -7,6 +7,7 @@ import NewArrival from "@/section/home/newArrival/NewArrival";
 import BigDiscount from "@/section/home/bigDiscount/BigDiscount";
 import Brands from "@/section/home/brands/Brands";
 import Ads from "@/section/home/ads/Ads";
+import CategoryList from "@/section/home/categoryList/CategoryList";
 
 const MainHome = () => {
 
@@ -21,7 +22,7 @@ const MainHome = () => {
             <Ads/>
             <Brands title={'Motor'} category={'motor'} display={'flex'}/>
             <Brands title={'Gadget'} category={'gadget'} display={'flex'}/>
-            {/*<CategoryList/>*/}
+            <CategoryList/>
             {/*<MadeForYou/>*/}
             {/*<AboutUs/>*/}
         </BoxCustom>
