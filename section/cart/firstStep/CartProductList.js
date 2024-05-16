@@ -1,6 +1,6 @@
 'use client'
 import {useDispatch, useSelector} from "react-redux";
-import CartProduct from "./CartProduct/CartProduct";
+import CartProduct from "@/section/cart/firstStep/cartProduct/CartProduct";
 
 const CartProductList = () => {
     const items = useSelector((state) => state.cart.items);
