@@ -2,10 +2,8 @@ import Link from "next/link";
 import { Grid } from "@mui/material";
 import { RedButton, WhiteButton } from "@/style/style";
 
-import { PrimaryBtn, SecondaryBtn } from "@/style/style";
 
 const CartButtonBox = ({items}) => {
-
     return (
         <Grid
             display={items.length === 0 ? "none" : "flex"}
@@ -16,7 +14,7 @@ const CartButtonBox = ({items}) => {
             padding: "10px",
         }}>
             <Link href={`/cart`}>
-                <RedButton sx={{ margin: "0px 1rem 0.75rem", width: "100%"}}>
+                <RedButton sx={{ width: "332px" ,margin: "0px 1rem 0.75rem"}}>
                     CheckOut Now $(
                     {items.reduce((price, item) => {
                         price = price + (item.count * (item.sale === true ? (item.price * (100 - item.MSale)) / 100 : item.price));
@@ -26,7 +24,7 @@ const CartButtonBox = ({items}) => {
                 </RedButton>
             </Link>
             <Link href={`/cart`}>
-                <WhiteButton sx={{ margin: "0px 1rem 0.75rem", width: "100%" }}>
+                <WhiteButton sx={{ width: "332px" ,margin: "0px 1rem 0.75rem"}}>
                     View Cart
                 </WhiteButton>
             </Link>
