@@ -21,8 +21,9 @@ const TopRating = () => {
                                 total={item.total}
                                 display={'block'}
                                 alignItem={'center'}
-                                w={126}
-                                h={126}
+                                className={"img-w-h-100"}
+                                w={900}
+                                h={900}
                             />
                         </Grid>
                     ))}
