@@ -47,6 +47,9 @@ const Cart = ({ state, setState, items }) => {
             anchor={"right"}
             open={state["right"]}
             onClose={toggleDrawer("right", false)}
+            sx={{
+                overflowX: "hidden"
+            }}
         >
             <DrowerContainer role="presentation">
                 <CustomGrid container>

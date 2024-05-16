@@ -42,7 +42,7 @@ const CartSelectedProductCard = ({ image, number, price, name, product }) => {
                         </NumberButton>
                     )}
                 </NumberBox>
-                <Image src={image} width="100%" height="100%" m="16px 0" alt={name} />
+                <Image src={image} width="100%" height="100%" m="16px 0" alt={name} className={"imageW-H"}/>
                 <InformationBox>
                     <TypographyMain>{name}</TypographyMain>
                     <TypographyGray>
