@@ -6,19 +6,19 @@ export const menu = [
     {
         id:1,
         title:'Car',
-        link:'/product/search/car',
+        link:'/[productId]/search/car',
         icon:<DirectionsCarIcon/>
     },
     {
         id:2,
         title:'Motor',
-        link:'/product/search/motor',
+        link:'/[productId]/search/motor',
         icon:<TwoWheelerIcon/>
     },
     {
         id:3,
         title:'Gadget',
-        link:'/product/search/gadget',
+        link:'/[productId]/search/gadget',
         icon:<DevicesOtherIcon/>
     },
 ]

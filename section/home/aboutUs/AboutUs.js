@@ -10,25 +10,25 @@ const about = [
     {
         id:1,
         title:'Worldwide Delivery',
-        describe:'We offer competitive prices on our 100 million plus product any range.',
+        describe:'We offer competitive prices on our 100 million plus [productId] any range.',
         icon:<LocalShippingIcon color={'secondary'} fontSize={'large'}/>
     },
     {
         id:2,
         title:'Safe Payment',
-        describe:'We offer competitive prices on our 100 million plus product any range.',
+        describe:'We offer competitive prices on our 100 million plus [productId] any range.',
         icon:<PaymentsIcon color={'secondary'} fontSize={'large'}/>
     },
     {
         id:3,
         title:'Shop With Confidence',
-        describe:'We offer competitive prices on our 100 million plus product any range.',
+        describe:'We offer competitive prices on our 100 million plus [productId] any range.',
         icon:<GppGoodOutlinedIcon color={'secondary'} fontSize={'large'}/>
     },
     {
         id:4,
         title:'24/7 Support',
-        describe:'We offer competitive prices on our 100 million plus product any range.',
+        describe:'We offer competitive prices on our 100 million plus [productId] any range.',
         icon:<HeadsetMicOutlinedIcon color={'secondary'} fontSize={'large'}/>
     },
 ]

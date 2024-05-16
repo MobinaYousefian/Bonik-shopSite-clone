@@ -1,6 +1,6 @@
 import {Grid} from "@mui/material";
 import Title from "@/section/home/title/Title";
-import {ProductData} from "@/library/Productdata";
+import {ProductData} from "@/library/ProductData";
 import ProductCard from "@/components/productCard/ProductCard";
 
 const MadeForYou = () => {

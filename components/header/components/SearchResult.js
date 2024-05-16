@@ -1,7 +1,7 @@
 import {Grid, Typography} from "@mui/material";
 import Link from "next/link";
 import {PaperCustomH} from "@/style/style";
-import {ProductData} from "@/library/Productdata";
+import {ProductData} from "@/library/ProductData";
 
 const SearchResult = ({search ,setSearch}) => {
     return(

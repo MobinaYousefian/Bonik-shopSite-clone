@@ -1,5 +1,5 @@
 import {Grid} from "@mui/material";
-import {ProductData} from "@/library/Productdata";
+import {ProductData} from "@/library/ProductData";
 import Title from "@/section/home/title/Title";
 import Brand from "@/section/home/brands/Brand";
 import ProductCard from "@/components/productCard/ProductCard";

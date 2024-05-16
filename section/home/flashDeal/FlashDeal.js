@@ -5,7 +5,7 @@ import BoltIcon from '@mui/icons-material/Bolt';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import {ProductData} from "@/library/Productdata";
+import {ProductData} from "@/library/ProductData";
 import Title from "@/section/home/title/Title";
 import ProductCard from "@/components/productCard/ProductCard";
 

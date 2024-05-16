@@ -12,7 +12,7 @@ const ProductImage = ({product,px=8 ,margin=4,mt=0} ) =>{
         <Grid item xs={12} sm={12} md={6}>
             <Grid container px={1}>
                 <Box display={'flex'} flexDirection={'column'} margin={'auto'}>
-                    <Grid px={0} mt={mt}>
+                    <Grid px={0} mt={mt} width={350} height={350}>
                         <Image src={product.images[bigImage-1].image} width={350} height={350} alt={'head phone'} className={"img-w-h-100"}/>
                     </Grid>
                     <Grid mt={margin}>

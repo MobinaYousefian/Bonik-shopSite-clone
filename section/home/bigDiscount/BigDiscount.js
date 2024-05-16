@@ -3,7 +3,7 @@ import {Box, Grid} from "@mui/material";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import {ProductData} from "@/library/Productdata";
+import {ProductData} from "@/library/ProductData";
 import Title from "@/section/home/title/Title";
 import ProductSuggestCard from "@/section/product/ProductSuggestCard";
 
