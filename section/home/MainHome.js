@@ -3,6 +3,7 @@ import {BoxCustom} from "@/style/style";
 import {FlashDeal} from "@/section/home/flashDeal/FlashDeal";
 import Category from "@/section/home/topCategories/TopCategories";
 import RatingAndFeature from "@/section/home/ratingAndFeature/RatingAndFeature";
+import NewArrival from "@/section/home/newArrival/NewArrival";
 
 const MainHome = () => {
 
@@ -11,7 +12,7 @@ const MainHome = () => {
             <FlashDeal/>
             <Category/>
             <RatingAndFeature/>
-            {/*<NewArrival/>*/}
+            <NewArrival/>
             {/*<BigDiscount/>*/}
             {/*<Brands title={'Car'} category={'car'} display={'none'}/>*/}
             {/*<Ads/>*/}
