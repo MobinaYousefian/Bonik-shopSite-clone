@@ -2,8 +2,8 @@
 import {Box, Button} from "@mui/material";
 import GridViewRoundedIcon from "@mui/icons-material/GridViewRounded";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import {MegaMenu} from "../../megaMenu/MegaMenu";
 import {useState} from "react";
+import {MegaMenu} from "@/components/megaMenu/MegaMenu";
 
 export default function MegaMenuButton({title, backColor}) {
     const [show,setShow] = useState(false);

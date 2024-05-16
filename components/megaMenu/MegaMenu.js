@@ -4,21 +4,22 @@ import Link from 'next/link'
 import Theme from "../../theme/theme";
 import {menu} from "@/library/menu";
 
+const BoxCustom = styled(Box)({
+    display: 'flex',
+    padding: '1px',
+    maxWidth: '1180px',
+    margin:'auto',
+})
+const PaperCustom = styled(Paper)({
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: '10px',
+    margin: 'auto',
+    boxShadow: ' rgb(3 0 71 / 9%) 0px 1px 3px',
+    width: "278px"
+})
+
 export const MegaMenu = () => {
-    const BoxCustom = styled(Box)({
-        display: 'flex',
-        padding: '1px',
-        maxWidth: '1180px',
-        margin:'auto',
-    })
-    const PaperCustom = styled(Paper)({
-        alignItems: 'center',
-        justifyContent: 'center',
-        borderRadius: '10px',
-        margin: 'auto',
-        boxShadow: ' rgb(3 0 71 / 9%) 0px 1px 3px',
-        width: "278px"
-    })
 
     return (
         <BoxCustom>
