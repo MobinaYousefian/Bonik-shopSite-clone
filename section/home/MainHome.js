@@ -1,7 +1,8 @@
 'use client'
 import {BoxCustom} from "@/style/style";
 import {FlashDeal} from "@/section/home/flashDeal/FlashDeal";
-import Category from "@/section/topCategories/TopCategories";
+import Category from "@/section/home/topCategories/TopCategories";
+import RatingAndFeature from "@/section/home/ratingAndFeature/RatingAndFeature";
 
 const MainHome = () => {
 
@@ -9,7 +10,7 @@ const MainHome = () => {
         <BoxCustom>
             <FlashDeal/>
             <Category/>
-            {/*<RatingAndFeature/>*/}
+            <RatingAndFeature/>
             {/*<NewArrival/>*/}
             {/*<BigDiscount/>*/}
             {/*<Brands title={'Car'} category={'car'} display={'none'}/>*/}
