@@ -25,7 +25,6 @@ export default function SearchCategoryPage({categoryData}) {
     const router = useRouter();
     const pathName = usePathname();
     const searchParams = useSearchParams();
-    const queriesSize = (Array.from(searchParams.values())).length;
 
     return (
         <BoxCustom>
@@ -39,6 +38,9 @@ export default function SearchCategoryPage({categoryData}) {
                             check1={check1}
                             check2={check2}
                             check3={check3}
+                            pathName={pathName}
+                            router={router}
+                            searchParams={searchParams}
                         />
                     </Grid>
                 </SwipeableDrawer>
@@ -51,9 +53,6 @@ export default function SearchCategoryPage({categoryData}) {
                     setMenu={setMenu}
                     matches={matches}
                     matchesHead={matchesHead}
-                    pathName={pathName}
-                    router={router}
-                    queriesSize={queriesSize}
                 />
                 <Grid item md={3.25} lg={3} display={'none'} sx={{
                     '@media (min-width: 900px)': {
@@ -67,12 +66,18 @@ export default function SearchCategoryPage({categoryData}) {
                         check1={check1}
                         check2={check2}
                         check3={check3}
+                        pathName={pathName}
+                        router={router}
+                        searchParams={searchParams}
                     />
                 </Grid>
                 <SearchCards
                     card={card}
                     filter={filter}
                     categoryData={categoryData}
+                    pathName={pathName}
+                    router={router}
+                    searchParams={searchParams}
                 />
             </Grid>
         </BoxCustom>

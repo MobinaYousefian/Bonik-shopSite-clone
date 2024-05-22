@@ -7,7 +7,7 @@ import {PaperCustom, TypographyGray, TypographyMain} from "@/style/style";
 
 const options = ['Relevance', 'Date', 'Price Low to High', 'Price High to Low'];
 
-const SearchHead = ({matches,matchesHead,setMenu,categoryData,setFilter,filter,card,setCard , router, pathName, queriesSize}) => {
+const SearchHead = ({matches,matchesHead,setMenu,categoryData,setFilter,filter,card,setCard}) => {
 
     const handleChange = (e) => {
         if (e.target.value === 'Price Low to High'){
@@ -64,19 +64,6 @@ const SearchHead = ({matches,matchesHead,setMenu,categoryData,setFilter,filter,c
                             <Grid display={matches === true ? 'none' : 'flex'}>
                                 <FilterAltIcon onClick={()=>setMenu(true)}/>
                             </Grid>
-                            {
-                                (queriesSize > 0) &&
-                                <Grid pl={1.5} onClick={() => router.push(`${pathName}`)}>
-                                    <TypographyMain component={'span'} sx={{
-                                        '&:hover': {
-                                            color: Theme.palette.primary.main,
-                                        },
-                                        cursor : "pointer"
-                                    }}>
-                                        Clear Filters
-                                    </TypographyMain>
-                                </Grid>
-                            }
                         </Grid>
                     </Grid>
                 </Grid>

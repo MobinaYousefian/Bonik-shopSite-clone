@@ -5,10 +5,28 @@ import {PaperCustom, TypographyMain} from "@/style/style";
 import SearchList from "@/section/search/SearchList";
 import SearchInput from "@/section/search/SearchInput";
 
-const SearchFilter = ({check1, check2, check3, filter, setFilter}) => {
+const SearchFilter = ({check1, check2, check3, filter, setFilter, router, pathName, searchParams}) => {
 
     const handleChange = (e) => {
         setFilter({...filter, [e.target.name]: Number(e.target.value)})
+    }
+
+    const handleDeleteq = () => {
+        const urlSearchParams = new URLSearchParams(searchParams);
+        urlSearchParams.delete("q");
+        router.push(`${pathName}?${urlSearchParams}`);
+    }
+
+    const handleDeleteStatus = () => {
+        const urlSearchParams = new URLSearchParams(searchParams);
+        urlSearchParams.delete("status");
+        router.push(`${pathName}?${urlSearchParams}`);
+    }
+
+    const handleDeleteRating = () => {
+        const urlSearchParams = new URLSearchParams(searchParams);
+        urlSearchParams.delete("rating");
+        router.push(`${pathName}?${urlSearchParams}`);
     }
 
     return (
@@ -36,27 +54,74 @@ const SearchFilter = ({check1, check2, check3, filter, setFilter}) => {
             </Grid>
             <Divider sx={{margin: '10px 0'}} variant="middle"/>
             <Grid>
-                <Grid my={3}>
+                <Grid my={3} sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                }}>
                     <TypographyMain pl={2}>
                         Brands
                     </TypographyMain>
+                    {
+                        (searchParams.get("q")) &&
+                        <TypographyMain onClick={handleDeleteq} px={2} component={'span'} sx={{
+                            '&:hover': {
+                                color: Theme.palette.primary.main,
+                            },
+                            cursor : "pointer"
+                        }}>
+                            Clear Filter
+                        </TypographyMain>
+                    }
                 </Grid>
-                <Grid>
+                <Grid pb={1}>
                     <SearchInput option={check1}/>
                 </Grid>
             </Grid>
             <Divider sx={{margin: '10px 0'}} variant="middle"/>
-            <Grid my={4}>
+            <Grid my={3}>
+                {
+                    (searchParams.get("status")) &&
+                    <Grid my={1} sx={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "flex-end",
+                    }}>
+                        <TypographyMain onClick={handleDeleteStatus} px={2} component={'span'} sx={{
+                            '&:hover': {
+                                color: Theme.palette.primary.main,
+                            },
+                            cursor : "pointer"
+                        }}>
+                            Clear Filter
+                        </TypographyMain>
+                    </Grid>
+                }
                 <Grid>
                     <SearchInput option={check2}/>
                 </Grid>
             </Grid>
             <Divider sx={{margin: '10px 0'}} variant="middle"/>
             <Grid>
-                <Grid my={3}>
+                <Grid my={3} sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                }}>
                     <TypographyMain pl={2}>
                         Rating
                     </TypographyMain>
+                    {
+                        (searchParams.get("rating")) &&
+                        <TypographyMain onClick={handleDeleteRating} px={2} component={'span'} sx={{
+                            '&:hover': {
+                                color: Theme.palette.primary.main,
+                            },
+                            cursor : "pointer"
+                        }}>
+                            Clear Filter
+                        </TypographyMain>
+                    }
                 </Grid>
                 <Grid>
                     <SearchInput option={check3}/>
@@ -64,7 +129,7 @@ const SearchFilter = ({check1, check2, check3, filter, setFilter}) => {
             </Grid>
             <Divider sx={{margin: '10px 0'}} variant="middle"/>
             <Grid>
-                <Grid my={2}>
+                <Grid my={2} >
                     <TypographyMain pl={2}>
                         Colors
                     </TypographyMain>
