@@ -29,6 +29,7 @@ export const ProductData = [
         MSale:60,
         vendor: 'Tarz',
         description: '',
+        status : ["On Sale"],
         images: [
             {
                 id: 1,
@@ -64,6 +65,7 @@ export const ProductData = [
         MSale:50,
         vendor: 'xamaha',
         description: '',
+        status : ["On Sale", "In Stock"],
         images: [
             {
                 id: 1,
@@ -99,6 +101,7 @@ export const ProductData = [
         MSale:50,
         vendor: 'xamaha',
         description: '',
+        status : ["On Sale"],
         images: [
             {
                 id: 1,
@@ -134,6 +137,7 @@ export const ProductData = [
         MSale:25,
         vendor: 'Xevel',
         description: '',
+        status : ["On Sale", "In Stock"],
         images: [
             {
                 id: 1,
@@ -169,6 +173,7 @@ export const ProductData = [
         MSale:50,
         vendor: 'Jackson',
         description: '',
+        status : ["On Sale", "In Stock"],
         images: [
             {
                 id: 1,
@@ -204,6 +209,7 @@ export const ProductData = [
         MSale:0,
         vendor: 'Siri',
         description: '',
+        status : ["In Stock"],
         images: [
             {
                 id: 1,
@@ -239,6 +245,7 @@ export const ProductData = [
         MSale:50,
         vendor: 'Cosor',
         description: '',
+        status : ["On Sale", "In Stock"],
         images: [
             {
                 id: 1,
@@ -274,6 +281,7 @@ export const ProductData = [
         MSale:0,
         vendor: 'Ranasonic',
         description: '',
+        status : ["In Stock"],
         images: [
             {
                 id: 1,
@@ -309,6 +317,7 @@ export const ProductData = [
         MSale:0,
         vendor: 'Lumix',
         description: '',
+        status : [],
         images: [
             {
                 id: 1,
@@ -344,6 +353,7 @@ export const ProductData = [
         MSale:0,
         vendor: 'Atech',
         description: '',
+        status : ["In Stock"],
         images: [
             {
                 id: 1,
@@ -379,6 +389,7 @@ export const ProductData = [
         MSale:10,
         vendor: 'Tony',
         description: '',
+        status : ["On Sale"],
         images: [
             {
                 id: 1,
@@ -414,6 +425,7 @@ export const ProductData = [
         MSale:10,
         vendor: 'Beat',
         description: '',
+        status : ["On Sale", "In Stock"],
         images: [
             {
                 id: 1,
@@ -449,6 +461,7 @@ export const ProductData = [
         MSale:30,
         vendor: 'Budi',
         description: '',
+        status : ["On Sale"],
         images: [
             {
                 id: 1,
@@ -484,6 +497,7 @@ export const ProductData = [
         MSale:20,
         vendor: 'Lord',
         description: '',
+        status : ["On Sale", "In Stock"],
         images: [
             {
                 id: 1,
@@ -519,6 +533,7 @@ export const ProductData = [
         MSale:40,
         vendor: 'Lord',
         description: '',
+        status : ["On Sale"],
         images: [
             {
                 id: 1,
@@ -554,6 +569,7 @@ export const ProductData = [
         MSale:30,
         vendor: 'Lord',
         description: '',
+        status : ["On Sale", "In Stock"],
         images: [
             {
                 id: 1,
@@ -589,6 +605,7 @@ export const ProductData = [
         MSale:30,
         vendor: 'Resla',
         description: '',
+        status : ["On Sale"],
         images: [
             {
                 id: 1,
@@ -624,6 +641,7 @@ export const ProductData = [
         MSale:20,
         vendor: 'Xorshe',
         description: '',
+        status : ["On Sale", "In Stock"],
         images: [
             {
                 id: 1,

@@ -1,27 +1,73 @@
 import {Rating} from "@mui/lab";
 
-export const check1 = [
-    {
-        id:11,
-        title:'Maccs'
-    },
-    {
-        id:22,
-        title:'Karts'
-    },
-    {
-        id:33,
-        title:'Baars'
-    },
-    {
-        id:44,
-        title:'Bukks'
-    },
-    {
-        id:55,
-        title:'Luasis'
-    }
-]
+export const check1 = {
+    car: [
+        {
+            id:1212,
+            title:'Lord'
+        },
+        {
+            id:1313,
+            title:'Resla'
+        },
+        {
+            id:1414,
+            title:'Xorshe'
+        },
+        {
+            id:1515,
+            title:'Budi'
+        }
+    ],
+    motor: [
+        {
+            id:11,
+            title:'Tarz'
+        },
+        {
+            id:22,
+            title:'Xamaha'
+        },
+        {
+            id:33,
+            title:'Xevel'
+        },
+        {
+            id:44,
+            title:'Jackson'
+        },
+    ],
+    gadget: [
+        {
+            id:55,
+            title:'Siri'
+        },
+        {
+            id:66,
+            title:'Cosor'
+        },
+        {
+            id:77,
+            title:'Ranasonic'
+        },
+        {
+            id:88,
+            title:'Lumix'
+        },
+        {
+            id:99,
+            title:'Atech'
+        },
+        {
+            id:1010,
+            title:'Tony'
+        },
+        {
+            id:1111,
+            title:'Beat'
+        },
+    ]
+}
 
 export const check2 = [
     {

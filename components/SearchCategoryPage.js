@@ -75,8 +75,6 @@ export default function SearchCategoryPage({categoryData}) {
                     card={card}
                     filter={filter}
                     categoryData={categoryData}
-                    pathName={pathName}
-                    router={router}
                     searchParams={searchParams}
                 />
             </Grid>

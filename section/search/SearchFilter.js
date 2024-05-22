@@ -7,6 +7,16 @@ import SearchInput from "@/section/search/SearchInput";
 
 const SearchFilter = ({check1, check2, check3, filter, setFilter, router, pathName, searchParams}) => {
 
+    if (pathName === "/product/search/car") {
+        check1 = check1.car
+    }
+    if (pathName === "/product/search/motor") {
+        check1 = check1.motor
+    }
+    if (pathName === "/product/search/gadget") {
+        check1 = check1.gadget
+    }
+
     const handleChange = (e) => {
         setFilter({...filter, [e.target.name]: Number(e.target.value)})
     }
