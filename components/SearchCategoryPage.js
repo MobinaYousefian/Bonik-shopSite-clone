@@ -7,6 +7,7 @@ import {check1, check2, check3} from "@/library/checks";
 import SearchHead from "@/section/search/SearchHead";
 import SearchFilter from "@/section/search/SearchFilter";
 import SearchCards from "@/section/search/SearchCards";
+import {usePathname, useRouter, useSearchParams} from "next/navigation";
 
 export default function SearchCategoryPage({categoryData}) {
     const [menu,setMenu] = useState(false);
@@ -20,6 +21,11 @@ export default function SearchCategoryPage({categoryData}) {
     );
     const matches = useMediaQuery('(min-width:900px)');
     const matchesHead = useMediaQuery('(min-width:750px)');
+
+    const router = useRouter();
+    const pathName = usePathname();
+    const searchParams = useSearchParams();
+    const queriesSize = (Array.from(searchParams.values())).length;
 
     return (
         <BoxCustom>
@@ -45,6 +51,9 @@ export default function SearchCategoryPage({categoryData}) {
                     setMenu={setMenu}
                     matches={matches}
                     matchesHead={matchesHead}
+                    pathName={pathName}
+                    router={router}
+                    queriesSize={queriesSize}
                 />
                 <Grid item md={3.25} lg={3} display={'none'} sx={{
                     '@media (min-width: 900px)': {
