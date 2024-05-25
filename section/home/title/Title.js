@@ -4,7 +4,7 @@ import Theme from "../../../theme/theme";
 import {styled} from "@mui/material/styles";
 import Link from 'next/link'
 
-const Title = ({title,icon}) =>{
+const Title = ({title,icon, url}) =>{
     const TypographyMain = styled(Typography)({
         color: Theme.palette.secondary.dark
     })
@@ -22,7 +22,7 @@ const Title = ({title,icon}) =>{
                     </TypographyMain>
                 </Grid>
                 <Grid display={'flex'} flexDirection={'row'} color={Theme.palette.secondary.light}>
-                    <Link href={`../product/search/${title.toLowerCase()}`}>
+                    <Link href={url}>
                         <TypographyGray>
                             View all
                         </TypographyGray>

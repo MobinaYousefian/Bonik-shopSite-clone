@@ -8,7 +8,7 @@ import Title from "@/section/home/title/Title";
 const TopRating = () => {
     return (
         <Grid container>
-            <Title title={'Top Ratings'} icon={<MilitaryTechIcon/>}/>
+            <Title title={'Top Ratings'} icon={<MilitaryTechIcon/>} url={"#"}/>
             <PaperCustom>
                 <Grid container spacing={3}>
                     {topRating.map((item)=>(

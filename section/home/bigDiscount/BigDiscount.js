@@ -36,7 +36,7 @@ const BigDiscount = () => {
                 maxWidth: "1200px",
                 width: "100%"
             }}>
-            <Title title={'Big Discounts'} icon={<CardGiftcardIcon/>}/>
+            <Title title={'Big Discounts'} icon={<CardGiftcardIcon/>} url={"#"}/>
             <Slider {...settings}>
                 {ProductData.filter(p => p.category !== 'gadget').map(product => (
                     <Grid key={product.id} padding={'12px'}>

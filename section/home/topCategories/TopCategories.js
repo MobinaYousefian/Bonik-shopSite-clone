@@ -79,7 +79,7 @@ export default function Category() {
                 maxWidth: "1200px",
                 width: '98%',
             }}>
-            <Title title={'Top Categories'} icon={<DashboardIcon/>}/>
+            <Title title={'Top Categories'} icon={<DashboardIcon/>} url={"#"}/>
             <Slider {...settings}>
                 {topCategory.map(item => (
                     <CartBox key={item.id} component="span">

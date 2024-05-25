@@ -49,7 +49,7 @@ const CategoryList = () => {
     ])
     return (
         <Grid my={2}>
-            <Title title={'Categories'} icon={<DashboardIcon/>}/>
+            <Title title={'Categories'} icon={<DashboardIcon/>} url={"/category"}/>
             <Grid container spacing={3}>
                 {paper.map(item => (
                     <Grid key={item.id} item xs={12} sm={4} md={3} lg={2}>

@@ -19,7 +19,7 @@ const Brands = ({category , title, display}) => {
                 <Brand display={display}/>
             </Grid>
             <Grid item xs={12} sm={7} md={9} pl={3}>
-                <Title title={title} icon={''}/>
+                <Title title={title} icon={''} url={`/product/search/${title.toLowerCase()}`}/>
                 <Grid container spacing={3}>
                     {ProductData.filter(p=> p.category === category).map(product => (
                         <Grid item xs={12} sm={6} md={4} lg={4} key={product.id}>

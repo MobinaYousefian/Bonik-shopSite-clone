@@ -8,7 +8,7 @@ import Title from "@/section/home/title/Title";
 const NewArrival = () =>{
     return(
         <Grid my={3}>
-            <Title title={'New Arrival'} icon={<NewReleasesIcon/>}/>
+            <Title title={'New Arrival'} icon={<NewReleasesIcon/>} url={"#"}/>
             <PaperCustom>
                 <Grid container spacing={3}>
                     {arrival.map((item)=>(

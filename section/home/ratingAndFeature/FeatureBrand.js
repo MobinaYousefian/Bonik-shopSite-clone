@@ -8,7 +8,7 @@ import CartItem from "@/section/home/ratingAndFeature/CartItem";
 const FeatureBrand = () => {
     return (
         <Grid container >
-            <Title title={'Feature Brands'} icon={<StarPurple500Icon/>}/>
+            <Title title={'Feature Brands'} icon={<StarPurple500Icon/>} url={"#"}/>
             <PaperCustom>
                 <Grid container spacing={3}>
                     {featureBrand.map((item)=>(
